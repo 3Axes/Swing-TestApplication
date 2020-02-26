@@ -9,7 +9,6 @@ public class radialSelections {
         JFrame frame = new JFrame("Radial Selections");
         frame.setDefaultCloseOperation(3);
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(3,3));
 
         ButtonGroup group = new ButtonGroup();
 
@@ -24,6 +23,20 @@ public class radialSelections {
         panel.add(rad1);
         panel.add(rad2);
         panel.add(rad3);
+
+        //ButtonGroup checkGroup = new ButtonGroup();
+
+        JCheckBox check1 = new JCheckBox("Checkbox 1");
+        JCheckBox check2 = new JCheckBox("Checkbox 2");
+        JCheckBox check3 = new JCheckBox("Checkbox 3");
+
+        //checkGroup.add(check1);
+        //checkGroup.add(check2);
+        //checkGroup.add(check3);
+
+        panel.add(check1);
+        panel.add(check2);
+        panel.add(check3);
 
         frame.add(panel);
         frame.pack();
