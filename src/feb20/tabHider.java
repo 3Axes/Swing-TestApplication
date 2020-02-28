@@ -16,6 +16,7 @@ public class tabHider {
                 }
                 catch(Exception e) {
                     System.out.println("No arguments given for '-title'");
+                    System.exit(2);
                 }
             }
         }
@@ -24,7 +25,7 @@ public class tabHider {
             title = "Google Chrome";
         }
 
-        int screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
+        int screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width + 100;
 
         runWindow(title, screenWidth);
 
@@ -39,5 +40,6 @@ public class tabHider {
         frame.setVisible(true);
         frame.pack();
         frame.setSize(width, 0);
+        frame.setLocation(0, 0);
     }
 }
