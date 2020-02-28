@@ -1,8 +1,7 @@
-package feb;
+package feb20;
 //2.26.20
 
 import javax.swing.*;
-import java.awt.*;
 
 public class radialSelections {
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
